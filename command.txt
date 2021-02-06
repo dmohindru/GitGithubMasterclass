@@ -1,2 +1,5 @@
 SECTION 1
 ----------
+# Initalize a git repository
+git init
+
