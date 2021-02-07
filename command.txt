@@ -16,5 +16,8 @@ git config --global core.editor "code --wait"
 
 SECTION 2
 ---------
+# 
+git remote add origin git@github.com:dmohindru/GitGithubMasterclass.git
 
-
+#
+git push origin master
