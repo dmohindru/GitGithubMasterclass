@@ -1,5 +1,5 @@
-SECTION 1
-----------
+SECTION 1: GETTING STARTED WITH GIT
+-----------------------------------
 # Initalize a git repository
 git init
 
@@ -14,8 +14,8 @@ git config --global user.name "Dhruv Mohindru"
 git config --global user.email dmohindru@gmail.com
 git config --global core.editor "code --wait"
 
-SECTION 2
----------
+SECTION 2: GETTING STARTED WITH GITHUB
+---------------------------------------
 # Add remote repository to our local git repository 
 git remote add origin git@github.com:dmohindru/GitGithubMasterclass.git
 
@@ -33,8 +33,8 @@ git pull
 # Display status of current repository
 git status
 
-SECTION 3
----------
+SECTION 3: FORK AND CLONE
+-------------------------
 # clone a repository
 git clone <repo_url>
 
@@ -47,8 +47,10 @@ git show <commit_sha>
 # Show what changed in head
 git show HEAD
 
-# Show what changed 3 commit before HEAD
-git show HEAD~3
+# Show what changed 3 or n commit before HEAD
+git show HEAD~3 
+or
+git show HEAD~n
 
 # Command to see change for a particular file
 git annotate <file_name>
@@ -78,3 +80,48 @@ git checkout -- .
 
 # Command to restore all files from a previous commit
 git checkout <few_char_of_previous_sha_commit> .
+
+
+SECTION 4: WORKING WITH BRANCHES
+--------------------------------
+As a good coding practice for any project maintain atleast 3 branches as below
+1. master: This branch holds the working version of project. This branch received a merge request from another branch below it like test.
+2. test: This branch maintains the test version of project. This branch receives a merge request from anther branch below it like dev.
+3. dev: This is a main development branch and would have many feature and bug fix branches that would eventually merge with main dev branch.
+
+In context of GitHub pull request is merge operation with the main repository from which a project was forked sometime ago.
+
+# create a branch in git
+git branch <branch_name>
+
+# display list of branches
+git branch
+
+# switch to a different branch
+git checkout <branch_name>
+
+# command to create a new branch and checkout
+git checkout -b <branch_name>
+
+# We can also create branches on Github also what we could do it on git.
+
+# A project can have multiple .gitignore file for each folder containing rules what files git should ignore while monitoring files in a repository
+Rules for gitignore file
+1. Name of this file should be .gitignore
+2. To ignore a file specify as: /file_name
+3. To ignore a directory specify as : dir_name/
+4. Comments start with: # This is a comment
+5. To ignore a some specific files in a directory specify as: dir_name/*.txt
+
+complete e.g.
+# Ignore file
+/credentials.py
+# Ignore folder
+text/
+# Ignore text file in a folder
+anotherfolder/*.txt
+
+
+There is a repository which contains templates of all .gitignore file for your specific project
+https://github.com/github/gitignore 
+  
