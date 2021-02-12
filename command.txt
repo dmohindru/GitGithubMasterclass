@@ -32,3 +32,49 @@ git pull
 
 # Display status of current repository
 git status
+
+SECTION 3
+---------
+# clone a repository
+git clone <repo_url>
+
+# find difference between two commits
+git diff <commit_sha1> <commit_sha2>
+
+# Show what changed for a particular commit
+git show <commit_sha>
+
+# Show what changed in head
+git show HEAD
+
+# Show what changed 3 commit before HEAD
+git show HEAD~3
+
+# Command to see change for a particular file
+git annotate <file_name>
+
+# Command to add stages file and command at same time
+git commit -a -m "Changed 404"
+
+# Command to restore a file from a previous commit if a modified file is not staged or commited
+git chekout -- <file_name>
+
+# Command to restore a file from a previous commit if a modified file in staged
+git reset HEAD <file_name>
+git checkoout <file_name>
+
+# Command to restore a file if a modified is committed and push to Github
+git checkout <few_char_of_previous_sha_commit> <file_name>
+
+# Command to add all files that have been modified in current directory
+git add .
+
+# Command to restore all file that have been modified if they are not stages
+git checkout -- .
+
+# Command to restore all file from a previous commit that have been stage
+git reset HEAD .
+git checkout -- .
+
+# Command to restore all files from a previous commit
+git checkout <few_char_of_previous_sha_commit> .
