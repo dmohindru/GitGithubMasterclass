@@ -153,3 +153,6 @@ SECTION 5: MERGE CONFLICTS
 --------------------------
 1. Fast forward merge
 2. Recursive merge
+
+# Command to abort merge
+git merge --abort
