@@ -123,5 +123,33 @@ anotherfolder/*.txt
 
 
 There is a repository which contains templates of all .gitignore file for your specific project
-https://github.com/github/gitignore 
-  
+https://github.com/github/gitignore
+
+# Command to push a particular branch to Github
+git push origin <branch_name>
+
+# Command to fetch all remote branches
+git fetch --all
+
+# Track a remote branch
+git checkout --track origin/test
+
+# Display relationship between branches
+git log --graph
+
+# Command to merge two branches
+# First checkout destination branch of merge operation
+git checkout <destination_branch>
+
+# Second issue merge command as follow
+git merge <source_branch> <destination_branch>
+
+# Delete a branch
+git branch -d <branch_name>
+
+# Pull request of github is analogy to merge in git on terminal
+
+SECTION 5: MERGE CONFLICTS
+--------------------------
+1. Fast forward merge
+2. Recursive merge
