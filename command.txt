@@ -164,6 +164,10 @@ git tag -a v1.0 -m "First public release"
 git push origin --tags
 
 
+SECTION 6: COLLABORATION IN GITHUB
+------------------------------------
+
+
 
 
 
