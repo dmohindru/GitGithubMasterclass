@@ -156,3 +156,15 @@ SECTION 5: MERGE CONFLICTS
 
 # Command to abort merge
 git merge --abort
+
+# Command to add tag to repository
+git tag -a v1.0 -m "First public release"
+
+# Command to push tage to remote repository
+git push origin --tags
+
+
+
+
+
+
