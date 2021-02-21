@@ -169,6 +169,31 @@ SECTION 6: COLLABORATION IN GITHUB
 
 
 
+EXTRA SECTION
+-------------
+# command to set global config for user.name and user.email
+git config --global user.email "email_address"
+git config --global user.name "user_name"
+
+# command to set local config for user.name and user.email
+git config --local user.email "email_address"
+git config --local user.name "user_name"
+//or omit --local as it is default
+git config user.email "email_address"
+git config user.name "user_name"
+
+# link to profile setting
+https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects
+
+# There exists three level of user config 
+--system
+--global
+--local
+
+and local overrides global and global overrides system
+
+
+
 
 
 
